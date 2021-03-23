@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  --primary-clr: #c23616;
+}
+
+body {
+  background: #faeeee;
+}
+
+.App {
+  text-align: center;
+}
+
+.Header {
+  margin-bottom: 3rem;
+}
+
+.Header-content {
+  position: relative;
+}
+
+.Header-title {
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.Header-small {
+  position: absolute;
+  font-weight: 400;
+}
+
+.Header-desc {
+  margin-top: 3rem;
+  font-size: 1.2em;
+}
+.Form-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Form {
+  padding: 10px;
+  width: 40vh;
+  max-width: 100%;
+}
+
+.Form input {
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  height: 3rem;
+  width: 100%;
+  border: 1px solid var(--primary-clr);
+  outline-color: var(--primary-clr);
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.btn {
+  background: var(--primary-clr);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 3rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background: #111;
+  color: #fff;
+  max-width: 25rem;
+}
+
+.btn-delete {
+  background: none;
+  color: var(--primary-clr);
+}
+
+.todo-item.complete {
+  text-decoration: line-through;
+  text-decoration-color: var(--primary-clr);
+  text-decoration-style: double;
+  opacity: 0.8;
+}
